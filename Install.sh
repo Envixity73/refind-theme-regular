@@ -4,7 +4,7 @@ clear
 echo "Downloading Refind Theme to "$HOME" [NOT DONE]"
 
 cd $HOME
-git clone https://github.com/bobafetthotmail/refind-theme-regular.git &> /dev/null
+git clone https://github.com/1j01/refind-theme-regular.git &> /dev/null
 
 sleep 1
 clear
