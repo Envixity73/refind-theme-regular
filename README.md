@@ -2,15 +2,17 @@
 
 A simplistic clean and minimal theme for rEFInd
 
-NOTE: this is a fork to create a dark mode/theme.
-However, the operating system logo icons have not been updated to constrast with a dark background.
-Windows and Ubuntu look fine, and many others should be fine too.
+NOTE: This is a fork to create a dark theme.
+However, the operating system logos haven’t been updated to constrast with a dark background.
+Windows and Ubuntu look fine, and many others should be fine too. Your results may vary.
 
 ![Screenshot](https://i.imgur.com/0AEk8BF.png)
 
-<p align="center">(press F10 to take a screenshot at the boot screen, which gets saved to <code>/boot/efi</code>)</p>
+<p align="center">(press F10 to take a screenshot at the boot screen, which then gets saved to <code>/boot/efi</code>)</p>
 
 ### Installation [Quick]:
+
+(Both installation methods assume you have installed rEFInd already.)
 
 Just paste this command in your terminal:
 ```
@@ -68,10 +70,12 @@ bash <(curl -s https://raw.githubusercontent.com/1j01/refind-theme-regular/maste
 
 ### TODO
 
-- Use `git remote add boot /boot/efi/EFI/refind/refind-theme-regular` to manage installed copy in development (and maybe for the quick install as well) (then you can just `git push boot master` to it)
-- Use a `themes` dir inside `refind`
+- Make it so the install script uses the repo its run from if it's in a cloned repo (instead of always cloning and using master)
+- DRY up how the install script output works
+- Use `git remote add boot /boot/efi/EFI/refind/refind-theme-regular` to manage installed copy in development (and maybe for the quick install as well) (then you can just push to it with `git push boot master`)
+- Use a `themes` dir inside the `refind` dir
 - Make dark theme live alongside light, installable from the same repo (or in separate repos but sharing tooling?)
-- Add an option for stretching all icons by some ratio to counteract a misproportioned boot screen (when your native monitor resolution is unavailable)
+- Add an option for stretching all icons by some ratio to counteract a misproportioned boot screen (when your native screen resolution is unavailable)
 - Make it clear from the directory structure what files are generated (at least via READMEs but maybe by naming the folder "built" or "derived" or "generated")
 
 ### More information
